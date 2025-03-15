@@ -1,0 +1,25 @@
+[project]
+name = "university-pythonweb-hw-06"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "KashnykovAnton",email = "kashnykov.anton@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "alembic (>=1.15.1,<2.0.0)",
+    "sqlalchemy (>=2.0.39,<3.0.0)",
+    "faker (>=37.0.0,<38.0.0)",
+    "psycopg2 (>=2.9.10,<3.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)",
+]
+
+[packages]
+include = [
+    { path = "university-pythonweb-hw-06", from = "." }
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
